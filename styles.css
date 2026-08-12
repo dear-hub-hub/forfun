@@ -134,6 +134,17 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
 .projects-panel > ul { padding-top: 20px; }.projects-panel .completed-panel { display: block; margin: 44px 0 0; padding: 27px 0 0; border-top: 1px solid rgba(120, 193, 255, .20); opacity: .48; }.projects-panel .completed-panel .tag { color: #86c9ff; }.projects-panel .completed-panel ul { display: grid; grid-template-columns: 1fr; gap: 0; padding: 0; margin: 11px 0 0; list-style: none; }.projects-panel .completed-panel li { padding: 10px 0; border-bottom: 1px solid rgba(120, 193, 255, .16); color: #b8d0e5; font-size: 13px; line-height: 1.48; }.projects-panel .completed-panel li b { margin-right: 7px; color: #79c2f8; font-size: 11px; }
 @media (max-width: 800px) { .research-content { grid-template-columns: 1fr; }.research-content > .interests-panel, .research-content > .projects-panel { padding: 35px 0 0; border-right: 0; }.research-content > .interests-panel { padding-top: 0; padding-bottom: 38px; border-bottom: 1px solid rgba(120, 193, 255, .28); }.interests-image { max-height: 230px; }.projects-panel .completed-panel li { font-size: 12px; } }
 
+/* Principal investigator card */
+.people-card { grid-template-columns: 170px minmax(0, 1fr); gap: 54px; max-width: 1120px; padding: 72px 0; }
+.pi-portrait { width: 170px; height: 170px; overflow: hidden; background: #062825; }
+.pi-portrait img { width: 100%; height: 100%; object-fit: cover; }
+.pi-details .tag { margin: 0 0 16px; color: #58706c; font-size: 12px; font-weight: 700; letter-spacing: .08em; }
+.pi-details h3 { margin: 0; color: #102522; font-size: clamp(36px, 4.2vw, 62px); line-height: 1; letter-spacing: -.07em; }
+.pi-details p:not(.tag) { margin: 25px 0 0; color: #102522; font-size: clamp(16px, 1.45vw, 22px); line-height: 1.55; }
+.pi-details .text-link { display: inline-block; margin-top: 28px; color: #102522; font-size: 13px; font-weight: 800; letter-spacing: .04em; text-decoration: none; text-transform: uppercase; }
+.pi-details .text-link:hover { color: #0875c9; }
+@media (max-width: 700px) { .people-card { grid-template-columns: 1fr; gap: 28px; padding: 42px 0; }.pi-portrait { width: 136px; height: 136px; }.pi-details h3 { font-size: clamp(34px, 10vw, 48px); }.pi-details p:not(.tag) { margin-top: 16px; font-size: 16px; }.pi-details .text-link { margin-top: 21px; } }
+
 /* Research diagram: fill the left column, then open as a readable full-screen lightbox on hover. */
 .interests-image { width: 100%; max-width: none; height: auto; max-height: none; margin: 25px 0 23px; cursor: zoom-in; outline: none; transition: filter .2s ease, border-color .2s ease; }.interests-image:hover, .interests-image:focus { position: fixed; inset: 0; z-index: 100; width: 100vw; height: 100vh; max-width: none; max-height: none; margin: 0; padding: 4vh 5vw; border: 0; background: rgba(1, 7, 14, .96); object-fit: contain; object-position: center; cursor: zoom-out; filter: drop-shadow(0 0 32px rgba(38, 155, 255, .22)); }.interests-image:focus-visible { outline: 2px solid #4bb3ff; outline-offset: 4px; }
 @media (max-width: 800px) { .interests-image { max-height: none; }.interests-image:hover, .interests-image:focus { padding: 7vh 4vw; } }
