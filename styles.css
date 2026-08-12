@@ -105,3 +105,11 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
 @keyframes wave-drift-three { 0%,100% { transform: translateX(0) translateY(-4px); } 47% { transform: translateX(-3%) translateY(12px) scaleY(1.16); } }
 @media (prefers-reduced-motion: reduce) { .wave { animation: none; } }
 @media (max-width: 700px) { .hero { min-height: 720px; padding-top: 65px; }.hero-eyebrow { padding: 9px 12px; font-size: 9px; letter-spacing: .12em; }.hero-eyebrow b { padding: 0 3px; }.hero-grid { margin-top: 47px; }.hero-mark { width: 78vw; left: 24%; top: 48%; opacity: .22; }.hero-title { font-size: clamp(58px, 18vw, 86px); }.hero-university { margin-top: 10px; font-size: 15px; letter-spacing: .38em; }.hero-rule { width: 86%; margin: 28px auto 24px; }.hero-message { font-size: 18px; }.hero-copy { padding: 0 10px; font-size: 14px; }.wave-field { bottom: 35px; height: 190px; }.hero-footer { font-size: 8px; } }
+
+/* Reference-layout lock: keep every hero element within a single screen. */
+.hero { height: calc(100vh - 76px); min-height: 740px; max-height: 885px; padding: 76px 5vw 26px; }
+.hero-eyebrow { position: relative; z-index: 3; margin: 0 auto; }
+.hero-mark { width: min(29vw, 420px); left: 21%; top: 55%; opacity: .15; animation-duration: 16s; }
+.hero-grid { position: relative; z-index: 3; width: min(1000px, 100%); margin: 48px auto 0; }
+.hero-title { font-size: clamp(68px, 10vw, 154px); }.hero-university { font-size: clamp(17px, 2vw, 31px); }.hero-rule { width: 69%; margin: 30px auto 26px; }.hero-message { font-size: clamp(20px, 2.05vw, 33px); }.hero-copy { max-width: 640px; margin-top: 20px; font-size: 16px; }.hero-actions { margin-top: 22px; }.wave-field { bottom: 0; height: 245px; opacity: .95; }.hero-footer { display: none; }
+@media (max-width: 700px) { .hero { height: auto; min-height: 720px; max-height: none; padding: 60px 5vw 24px; }.hero-grid { margin-top: 42px; }.hero-mark { width: 62vw; left: 22%; top: 53%; opacity: .15; }.hero-title { font-size: clamp(58px, 18vw, 86px); }.hero-university { font-size: 14px; }.hero-message { font-size: 18px; }.wave-field { height: 180px; } }
