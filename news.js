@@ -13,3 +13,8 @@ const yearObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-18% 0px -58% 0px', threshold: [0.1, 0.35, 0.6] });
 
 yearSections.forEach((section) => yearObserver.observe(section));
+
+const lastYear = yearSections.at(-1);
+window.addEventListener('scroll', () => {
+  if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8) setActiveYear(lastYear.id);
+}, { passive: true });
