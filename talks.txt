@@ -1,0 +1,22 @@
+Seminars and Talk
+2026
+"High Data Rate ADCs", Sejong Univ., Jul. 2026.
+"Emerging Trends of Advanced CIM Architectures for AI Acceleration", Dongkuk Univ., Jul. 2026.
+"Energy-Efficient Design Techniques for Sensor Read-Out ICs", 2026 IEIE Summer Annual Conference, Jun. 2026.
+"Energy-Efficient Design Techniques for Sensor Read-Out ICs", 2026 SoC Conference, May. 2026.
+"Advanced ADC Design Techniques for Sensor Interfaces", Gachon Univ., Apr. 2026.
+"Advanced ADC Design Techniques for Biomedical Applications", Hanyang Univ., Apr. 2026.
+"Design of Op Amps", IDEC, Mar. 2026.
+"Modern High Speed HDR Imagers", 2026 ICOS, Jan. 2026.
+2025
+"Application-Specific Data Converters", Hanyang Univ., Oct. 2025.
+"Application-Specific Data Converter Array: Imager and CIM", 2026 IEIE RF/Analog Workshop, Sept. 2025.
+"Design of Op Amps", IDEC, Jul. 2025.
+~2024
+"Ultra-Low Noise Instrumentation Amplifiers for Ultra-High Precision Sensor Interfaces", 2024 IEIE Autumn Annual Conference, Nov. 2024.
+"Energy-Efficient Imaging Architecture", 2024 SoC Conference, May. 2024.
+"Energy-Efficient Digitizer for Sub-Micron Imager", Pixelplus, Apr. 2024.
+"Design of Op Amps", IDEC, Mar. 2024.
+"High-Speed, Low-Power Circuitry", KDT, Jan. 2024.
+"High Resolution ADC", Kwangwoon Univ., Dec. 2023.
+"System Semiconductor for 4th Industrial Revolution", 2023 SoC Conference, May. 2023.

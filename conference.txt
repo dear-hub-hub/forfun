@@ -1,0 +1,75 @@
+Conference
+* Corresponding Authorship
+
+2026
+
+(Accepted) S. Han, H. Lee, N. Kim, and J. Jun*, "A 19.43-bit Effective Resolution and 3.9 kSPS SAR-Based Integrator-Residue Extended Counting First-Order ΔΣ ADC", IEEE ISCAS, May. 2026.
+
+(Accepted) Y. Kim, H. Lee, N. Kim, and J. Jun*, "A 28-nm 10-bit Conversion-Cycle-Reduced SAR ADC with Overlapped Foreground MSB Prediction", IEEE ITC-CSCC, Jul. 2026.
+
+S. Park, H. Park, W. Choi, and J. Jun, "A 58.8 nW 35.3 dB Cascoded Floating Inverter Amplifier", ICOS, Jan. 2026.
+
+G. Yu, J. Kim, and J. Jun, "A High-Efficiency PWM Buck Converter with Dead-Time Control and Loss-Aware Switch", ICOS, Jan. 2026.
+
+2025
+
+S. Sim, J. Jo, and  J. Jun*, "An Adjustable Switched-Capacitor LDO with An Inverter-Based Charge-Pump for Fast Transient Responses", IEEE ISOCC, Oct. 2025.
+
+D. Kim, W. Han, M. Sung, and  J. Jun*, "An Enhanced Transient Response and Low Quiescent Current Capacitor-Free Low-Dropout Voltage Regulator with Pseudo-Differentiator-Based Compensation", IEEE ICCE-Asia, Oct. 2025.
+
+H. Park, C. Hwang, S. Kim, W. Choi, and  J. Jun*, "Design of a Cascoded Floating Inverter Amplifier for Gain Enhancement", IEEE ICCE-Asia, Oct. 2025. (Best Paper Awards)
+
+K. Lee, H. Chung, S. Sim, M. Sung, and  J. Jun*, "Optimized Design of a High-Efficiency PWM Buck Converter for Low-Voltage Power Management", IEEE ICCE-Asia, Oct. 2025.
+
+S. Park, K. Sim, W. Choi, and  J. Jun*, "Design of a Cascaded Floating Inverter Amplifier with Stability-Enhanced Technique", IEEE ICCE-Asia, Oct. 2025. (Best Paper Awards)
+
+D. Kim, S. Kim, and  J. Jun*, "Design and Verification of 90.5% Efficiency Buck Converter with Pulse Width Modulation", IEEE ITC-CSCC, Jul. 2025.
+
+S. Baek, S. Park, S. Eom, S. Hwang, J. Kim, and  J. Jun*, "Capless Low-Dropout Voltage Regulator with Differentiator", IEEE ITC-CSCC, Jul. 2025.
+
+S. Kim, K. Lee, Y. Jung and  J. Jun*, "Design and Verification of High-Precision Comparators: An Analytical Approach with Monte Carlo Simulations", IEEE ICEIC, Jan. 2025.
+
+J. Jo, K. Sim, and  J. Jun*, "A Pulse Width Modulation-Based Spike Generator to Eliminate Timing Errors in Spiking Neural Networks", IEEE ICEIC, Jan. 2025. pp 1–2.
+
+~2024
+
+J. Jo, and J. Jun*, "A Low-Noise Capacitively-Coupled Chopper Instrumentation Amplifier with Digital-Assisted Offset Calibration," ISSDM, Dec. 2024.
+
+S. Kim, S. Sim, K. Sim, and J. Jun*, "Pre-Boosting Fine Regulation Digital LDO for High Speed SoC Applications," IEEE ISOCC, Aug. 2024. pp.1–4.
+
+J. Jo, and J. Jun*, "A Low-Noise Capacitively-Coupled Chopper Instrumentation Amplifier with SAR-Assisted Low Current Ripple Reduction Technique," IEEE ISOCC, Aug. 2024. pp.1–4.
+
+J. Jun, H. Yang, B. Yoon, Y. Kim, and K. Koh, "A Low Power Digitizer with Piecewise-Linear Counting Technique for High Dynamic Range Nonacell-Based 3-D-Stacked CMOS Image Sensor," IEEE ISCAS, May. 2023. pp.1–4. 
+
+J. Jun, et. al., "A 0.7 μm-Pitch 108 Mpixel Nonacell-Based CMOS Image Sensor with Decision-Feedback Technique," IEEE ISCAS, May. 2022. pp.283–287. (Best Paper Award)
+
+J. Jun, J. Kang, and S. Kim, "A 16 bit Incremental ADC with Swapping DAC for Low Power Sensor Applications," IEEE ISCAS, May. 2019. pp.1–4.
+
+J. Jun, J. Rhee, M. Kim, J. Kang, and S. Kim, "A 21.8b Sub-100μHz 1/f Corner 2.4μV-Offset Programmable-Gain Read-Out IC for Bridge Measurement Systems," IEEE ISSCC, Feb. 2018. pp 330–332. (including Demonstration)
+
+Y. Yang, J. Jun, and S. Kim, "A Low-Pass Continuous-Time Delta-Sigma Interface Circuit for Wideband MEMS Gyroscope Readout ASIC," IEEE ISOCC, Sept. 2017. pp.1–4.
+
+J. Jun, J. Rhee, and S. Kim, "A 386-μW, 15.2-bit Programmable-Gain Embedded Delta-Sigma ADC for Sensor Applications," IEEE ISLPED, Aug. 2016. pp.278–283. (BK21+ Computer Science SCI Conference)
+
+Domestic Conferences
+S. Sim, D. Kim, and J. Jun, "A 9.4-fs-FoM Fast Transient Switched-Capacitor LDO in 28-nm CMOS, KCS, Jan. 2026.
+
+조정국, 유경석, 전재훈, "저전력 리플 저감 기법을 적용한 저잡음 커패시터 결합 초핑 계측 증폭기", 대한전자공학회 추계학술대회, Nov, 2025.
+
+김동환, 전재훈, "저손실 고효율 PWM 벅 컨버터의 설계와 최적화 기법", 반도체공학회 하계학술대회, Jul, 2025.
+
+이강재, 전재훈, "안정성 향상을 위한 미분기 기반 무커패시터형 LDO 레귤레이터", 반도체공학회 하계학술대회, Jul, 2025.
+
+김동환, 이강재, 전재훈, "High-Efficiency Buck Converter for Modern Electronic Applications", SoC 학술대회 (포스터), May, 2025.
+
+Y. Lee, J. Jun, and S. Kim, "A Split Current Source Single-Slope Analog-to-Digital Converter for a Low Power Wide Dynamic Range", In Proceedings of the IEIE Summer Annual Conference, Jun. 2024.
+
+Y. Kim, J. Jun, and S. Kim, "Implementation and Analysis of Topologies for Performance Improvement of Low Power, High Resolution SAR ADC", In Proceedings of the IEIE Summer Annual Conference, Jun. 2023.
+
+J. Jun, J. Rhee, S. Kim, S. Na, and S. Kim, "Noise Analytical Design of Analog Front-End for Audio Applications", In Proceedings of the IEIE Summer Annual Conference, Jun. 2015. pp. 201–203.
+
+M. Jang, J. Rhee, J. Jun, Y. Yang, and S. Kim, "Implementation of Digital Decimation Filter for High resolution Audio application ΣΔ A/D Converter," In Proceedings of the IEIE Fall Annual Conference, Nov. 2014. pp. 222–225.
+
+J. Jun, J. Rhee, S. Kim, S. Na, H. Lee, and S. Kim, “17-FO4 delay, 28mW Radix 64 Crossbar Switch based on Hierarchical Multiplexing Architecture,” In Proceedings of the IEIE Summer Annual Conference, Jun. 2014. pp. 245–248.
+
+J. Jun, H. Lee, J. Cho, S. Na, and S. Kim, “Implementation of 20Gbps CMOS Trans-Impedance Amplifier for Silicon Photonics,” In Proceedings of the IEIE Fall Annual Conference, Nov. 2013. pp. 131–134.
