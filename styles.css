@@ -473,6 +473,33 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
   .research-more span { font-size: 11px; }
 }
 
+/* Final news button sizing — keep after all earlier news overrides. */
+.news-home .news-more {
+  width: 104px;
+  min-width: 104px;
+  height: 104px;
+  padding: 0 18px;
+}
+
+.news-home .news-more span {
+  font-size: 13px;
+  line-height: 1.05;
+  letter-spacing: .025em;
+}
+
+.news-home .news-more b { font-size: 20px; }
+
+@media (max-width: 760px) {
+  .news-home .news-more {
+    width: 88px;
+    min-width: 88px;
+    height: 88px;
+    padding: 0 14px;
+  }
+  .news-home .news-more span { font-size: 11px; }
+  .news-home .news-more b { font-size: 17px; }
+}
+
 /* Unified section indices and editorial approach composition */
 .section-index,
 .news-kicker .section-index {
