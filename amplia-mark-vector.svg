@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 84" role="img" aria-labelledby="title desc">
+  <title id="title">Amplia mark</title>
+  <desc id="desc">Transparent white network emblem with a light-blue edit symbol.</desc>
+
+  <!-- Outer connected network -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M41 7 70 24v35L41 76 13 59V24Z"/>
+    <circle cx="41" cy="7" r="5" fill="#FFFFFF" stroke="none"/>
+    <circle cx="41" cy="7" r="2" stroke="none"/>
+    <circle cx="70" cy="24" r="5" fill="#FFFFFF" stroke="none"/>
+    <circle cx="70" cy="24" r="2" stroke="none"/>
+    <circle cx="70" cy="59" r="5" fill="#FFFFFF" stroke="none"/>
+    <circle cx="70" cy="59" r="2" stroke="none"/>
+    <circle cx="41" cy="76" r="5" fill="#FFFFFF" stroke="none"/>
+    <circle cx="41" cy="76" r="2" stroke="none"/>
+    <circle cx="13" cy="59" r="5" fill="#FFFFFF" stroke="none"/>
+    <circle cx="13" cy="59" r="2" stroke="none"/>
+    <circle cx="13" cy="24" r="5" fill="#FFFFFF" stroke="none"/>
+    <circle cx="13" cy="24" r="2" stroke="none"/>
+  </g>
+
+  <!-- Central document -->
+  <path fill="#FFFFFF" d="M28 23h25a7 7 0 0 1 7 7v25a7 7 0 0 1-7 7H28a7 7 0 0 1-7-7V30a7 7 0 0 1 7-7Z"/>
+
+  <!-- Light-blue binding details -->
+  <g fill="#22B8E6">
+    <rect x="25" y="29" width="4" height="5" rx="2"/>
+    <rect x="25" y="37" width="4" height="5" rx="2"/>
+    <rect x="25" y="45" width="4" height="5" rx="2"/>
+    <rect x="25" y="53" width="4" height="4" rx="2"/>
+  </g>
+
+  <!-- Light-blue edit pencil -->
+  <g fill="#22B8E6">
+    <path d="m39.5 52.8 2-6 11.9-11.9 6 6-11.9 11.9-6 2Z"/>
+    <path d="m55.2 33.1 1.7-1.7a2.1 2.1 0 0 1 3 0l3 3a2.1 2.1 0 0 1 0 3l-1.7 1.7Z"/>
+  </g>
+</svg>

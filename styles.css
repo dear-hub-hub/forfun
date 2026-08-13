@@ -1000,3 +1000,22 @@ body > footer .brand-mark { filter: brightness(0) invert(1); }
   .contact { min-height: 806px; }
   .contact-map { height: 301px; }
 }
+
+/* Restore the original light footer and use the vector brand mark. */
+body > footer {
+  border-top: 1px solid var(--line);
+  background: var(--cream);
+  color: var(--ink);
+}
+body > footer .brand,
+body > footer a { color: var(--ink); }
+body > footer p { color: var(--muted); }
+.site-header .brand-mark,
+body > footer .brand-mark {
+  width: 30px;
+  height: 32px;
+  padding: 3px;
+  background: #061321;
+  object-fit: contain;
+  filter: none;
+}
