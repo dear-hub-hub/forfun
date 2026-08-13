@@ -641,6 +641,12 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
 }
 
 .recruiting-title h2 { margin-top: 14px; }
+.recruiting-title > .eyebrow {
+  color: #061b18;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: .13em;
+}
 .recruiting-title h2 span,
 .recruiting-title h2 em { display: inline-block; will-change: transform, opacity, filter; }
 .recruiting-title h2 span { opacity: 0; filter: blur(10px); transform: translateX(-180px); }
