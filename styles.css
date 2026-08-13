@@ -250,8 +250,8 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
 /* Live cinematic composition: clean artwork, crisp HTML type, fully animated signals. */
 .hero { --hero-scroll: 0; background-image: url('hero-cinematic-clean.png'); background-position: center 42%; }
 .hero .hero-grid { display: block; z-index: 6; width: min(1120px, 100%); transform: translateY(-3vh); }
-.hero .hero-title { overflow: visible; padding: 0 .08em; color: #fff; font-size: clamp(83px, 10.7vw, 172px); letter-spacing: -.045em; filter: none; text-shadow: 0 0 10px rgba(255,255,255,.2), 0 0 26px rgba(72,172,255,.3), 0 8px 32px rgba(0,0,0,.82); }
-.hero .hero-title b { display: inline-block; padding: 0 .055em .03em .02em; color: transparent; background: linear-gradient(180deg,#d9f4ff 0%,#72caff 18%,#2399ed 42%,#075aaa 70%,#002b59 100%); background-clip: text; -webkit-background-clip: text; letter-spacing: -.035em; filter: contrast(1.12) saturate(1.12) drop-shadow(0 0 9px rgba(57,169,255,.28)); }
+.hero .hero-title { overflow: visible; padding: 0 .08em; color: #fff; font-size: clamp(83px, 10.7vw, 172px); letter-spacing: -.045em; filter: none; text-shadow: 0 0 8px rgba(255,255,255,.16), 0 0 22px rgba(40,151,255,.26), 0 8px 32px rgba(0,0,0,.82); }
+.hero .hero-title b { display: inline-block; padding: 0 .055em .03em .02em; color: transparent; background: linear-gradient(180deg,#79ccff 0%,#49b1f7 20%,#168de8 48%,#0667ce 73%,#064690 100%); background-clip: text; -webkit-background-clip: text; letter-spacing: -.035em; filter: contrast(1.08) saturate(1.15) drop-shadow(0 0 8px rgba(28,142,244,.26)); }
 .hero .hero-university { display: flex; align-items: center; justify-content: center; gap: 13px; margin-top: 13px; color: #58aaff; font-size: clamp(12px, 1.4vw, 22px); font-weight: 800; letter-spacing: .48em; line-height: 1; }
 .hero .hero-university img { width: 1.55em; height: 1.55em; object-fit: contain; filter: drop-shadow(0 0 5px rgba(68,174,255,.38)); }
 .hero .hero-rule { position: relative; overflow: hidden; width: 70vw; max-width: 1120px; height: 3px; margin: 25px auto 23px; background: rgba(52,153,238,.26); box-shadow: 0 0 8px rgba(23,145,255,.18); }
