@@ -12,3 +12,13 @@ nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () =>
   menuButton?.setAttribute('aria-expanded', 'false');
   if (menuButton) menuButton.textContent = 'Menu';
 }));
+
+const hero = document.querySelector('.hero');
+const updateHeroScrollLight = () => {
+  if (!hero) return;
+  const progress = Math.min(1, Math.max(0, window.scrollY / Math.max(hero.offsetHeight * .65, 1)));
+  hero.style.setProperty('--hero-scroll', progress.toFixed(3));
+};
+
+updateHeroScrollLight();
+window.addEventListener('scroll', updateHeroScrollLight, { passive: true });

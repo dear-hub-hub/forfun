@@ -246,3 +246,34 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
   .hero { min-height: 780px; background-position: center top; background-size: auto 100%; }
   .hero .wave-field { height: 34%; opacity: .42; }
 }
+
+/* Live cinematic composition: clean artwork, crisp HTML type, fully animated signals. */
+.hero { --hero-scroll: 0; background-image: url('hero-cinematic-clean.png'); }
+.hero .hero-grid { display: block; z-index: 6; width: min(820px, 100%); transform: translateY(-3vh); }
+.hero .hero-title { color: #fff; font-size: clamp(64px, 8.2vw, 132px); filter: none; text-shadow: 0 7px 28px rgba(0,0,0,.68); }
+.hero .hero-title b { color: transparent; background: linear-gradient(180deg,#57b9ff,#0866cc 88%); background-clip: text; -webkit-background-clip: text; }
+.hero .hero-university { display: flex; align-items: center; justify-content: center; gap: 13px; margin-top: 13px; color: #58aaff; font-size: clamp(12px, 1.4vw, 22px); font-weight: 800; letter-spacing: .48em; line-height: 1; }
+.hero .hero-university img { width: 1em; height: 1em; object-fit: contain; filter: brightness(1.4) saturate(.9); }
+.hero .hero-rule { position: relative; overflow: hidden; width: 66%; height: 2px; margin: 25px auto 23px; background: rgba(52,153,238,.22); box-shadow: none; }
+.hero .hero-rule::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, transparent 0%, transparent 37%, #dff5ff 49%, #4cb7ff 52%, transparent 64%, transparent 100%); background-size: 220% 100%; background-position-x: calc(100% - (var(--hero-scroll) * 200%)); filter: drop-shadow(0 0 8px #149cff); }
+.hero .hero-message { color: #42a5ff; font-size: clamp(14px, 1.45vw, 23px); font-weight: 800; line-height: 1.25; text-shadow: 0 2px 12px rgba(0,0,0,.82); }
+.hero .hero-message i { color: #fff; font-weight: 650; }
+.hero .hero-copy { display: block; max-width: 520px; margin: 16px auto 0; color: #d1e0ec; font-size: 11px; font-weight: 600; line-height: 1.55; text-shadow: 0 2px 9px #000; }
+.hero .hero-actions { margin-top: 15px; }
+.hero .hero-actions .button { padding: 10px 13px; font-size: 10px; }
+.hero .wave-field { height: 42%; opacity: .64; }
+.hero .wave { transform-origin: center; will-change: transform; }
+.hero .wave-one { animation: wave-drift-one 6.5s ease-in-out infinite; }
+.hero .wave-two { animation: wave-drift-two 9s ease-in-out infinite alternate; }
+.hero .wave-three { animation: wave-drift-three 12.5s ease-in-out infinite reverse; }
+.hero .wave-four { animation: wave-drift-two 17s ease-in-out infinite reverse; }
+
+@media (max-width: 700px) {
+  .hero .hero-grid { transform: translateY(-4vh); }
+  .hero .hero-title { font-size: clamp(54px, 17vw, 78px); }
+  .hero .hero-university { gap: 8px; font-size: 11px; letter-spacing: .3em; }
+  .hero .hero-rule { width: 82%; margin: 20px auto; }
+  .hero .hero-message { font-size: 15px; }
+  .hero .hero-copy { padding: 0 8px; font-size: 10px; }
+  .hero .wave-field { height: 36%; }
+}
