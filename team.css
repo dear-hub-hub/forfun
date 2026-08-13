@@ -5,3 +5,5 @@
 
 /* Equal graduate-card spacing without divider lines */
 .member-grid{gap:18px;border-top:0}.member-card,.member-card:nth-child(odd),.member-card:nth-child(even){padding:32px;border:0;background:rgba(255,255,255,.28)}.member-card:hover,.member-card:focus-within{background:#fff}@media(max-width:900px){.member-card,.member-card:nth-child(odd),.member-card:nth-child(even){padding:28px}}@media(max-width:600px){.member-grid{gap:12px}.member-card,.member-card:nth-child(odd),.member-card:nth-child(even){padding:22px}}
+
+.member-card:hover,.member-card:focus-within{box-shadow:none;transform:none;outline:0}
