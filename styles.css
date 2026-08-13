@@ -249,6 +249,7 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
 
 /* Live cinematic composition: clean artwork, crisp HTML type, fully animated signals. */
 .hero { --hero-scroll: 0; background-image: url('hero-cinematic-clean.png'); background-position: center 58%; }
+.hero .hero-mark { display: block; width: min(34vw, 470px); height: auto; left: 50%; top: 31%; z-index: 5; opacity: .2; clip-path: none; border-radius: 0; object-fit: contain; filter: grayscale(1) brightness(4) drop-shadow(0 0 18px rgba(139,211,255,.28)); transform: translate(-50%, -50%); animation: none; pointer-events: none; mask-image: linear-gradient(to bottom, #000 0%, #000 35%, rgba(0,0,0,.78) 56%, rgba(0,0,0,.32) 76%, transparent 96%); -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 35%, rgba(0,0,0,.78) 56%, rgba(0,0,0,.32) 76%, transparent 96%); }
 .hero .hero-grid { display: block; z-index: 6; width: min(1120px, 100%); transform: translateY(-3vh); }
 .hero .hero-title { overflow: visible; padding: 0 .08em; color: #fff; font-size: clamp(83px, 10.7vw, 172px); letter-spacing: -.045em; filter: none; text-shadow: 0 4px 0 rgba(0,0,0,.32), 0 9px 18px rgba(0,0,0,.62); }
 .hero .hero-title b { display: inline-block; padding: 0 .055em .05em .02em; color: #187bc5; -webkit-text-fill-color: transparent; background-color: #187bc5; background-image: linear-gradient(to bottom, #72ddff 0%, #55c9ff 10%, #36aeef 24%, #168edc 44%, #087ed2 63%, #075aa5 78%, #062b62 91%, #031a3d 100%); background-size: 100% 100%; background-repeat: no-repeat; background-clip: text; -webkit-background-clip: text; letter-spacing: -.035em; filter: saturate(1.18) contrast(1.06) drop-shadow(0 8px 7px rgba(0,8,28,.9)) drop-shadow(0 15px 18px rgba(0,3,15,.62)); text-shadow: none; }
@@ -286,6 +287,7 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
 
 
 @media (max-width: 700px) {
+  .hero .hero-mark { width: min(72vw, 330px); top: 29%; opacity: .17; }
   .hero .hero-grid { transform: translateY(-4vh); }
   .hero .hero-title { font-size: clamp(64px, 20vw, 96px); letter-spacing: -.05em; }
   .hero .hero-university { gap: 8px; font-size: 13px; letter-spacing: .3em; }
