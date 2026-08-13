@@ -250,10 +250,10 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
 /* Live cinematic composition: clean artwork, crisp HTML type, fully animated signals. */
 .hero { --hero-scroll: 0; background-image: url('hero-cinematic-clean.png'); }
 .hero .hero-grid { display: block; z-index: 6; width: min(1120px, 100%); transform: translateY(-3vh); }
-.hero .hero-title { color: #fff; font-size: clamp(83px, 10.7vw, 172px); filter: brightness(1.18) contrast(1.12); text-shadow: 0 0 18px rgba(126,204,255,.28), 0 8px 32px rgba(0,0,0,.76); }
-.hero .hero-title b { color: transparent; background: linear-gradient(180deg,#8bd2ff 0%,#289dff 38%,#0870df 78%,#0753ad 100%); background-clip: text; -webkit-background-clip: text; }
+.hero .hero-title { overflow: visible; padding: 0 .08em; color: #fff; font-size: clamp(83px, 10.7vw, 172px); filter: none; text-shadow: 0 0 14px rgba(126,204,255,.18), 0 8px 32px rgba(0,0,0,.78); }
+.hero .hero-title b { display: inline-block; padding: 0 .045em .03em .015em; color: transparent; background: linear-gradient(180deg,#72c8ff 0%,#238fdf 33%,#075aaa 65%,#002e61 100%); background-clip: text; -webkit-background-clip: text; filter: contrast(1.08) saturate(1.12); }
 .hero .hero-university { display: flex; align-items: center; justify-content: center; gap: 13px; margin-top: 13px; color: #58aaff; font-size: clamp(12px, 1.4vw, 22px); font-weight: 800; letter-spacing: .48em; line-height: 1; }
-.hero .hero-university img { width: 1em; height: 1em; object-fit: contain; filter: brightness(1.4) saturate(.9); }
+.hero .hero-university img { width: 1.55em; height: 1.55em; object-fit: contain; filter: drop-shadow(0 0 5px rgba(68,174,255,.38)); }
 .hero .hero-rule { position: relative; overflow: hidden; width: 70vw; max-width: 1120px; height: 3px; margin: 25px auto 23px; background: rgba(52,153,238,.26); box-shadow: 0 0 8px rgba(23,145,255,.18); }
 .hero .hero-rule::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, transparent 0%, transparent 37%, #dff5ff 49%, #4cb7ff 52%, transparent 64%, transparent 100%); background-size: 220% 100%; background-position-x: calc(100% - (var(--hero-scroll) * 200%)); filter: drop-shadow(0 0 8px #149cff); }
 .hero .hero-message { color: #42a5ff; font-size: clamp(14px, 1.45vw, 23px); font-weight: 800; line-height: 1.25; text-shadow: 0 2px 12px rgba(0,0,0,.82); }
