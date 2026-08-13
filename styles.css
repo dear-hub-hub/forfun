@@ -231,3 +231,18 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
   .hero-mark { top: 48%; }
   .wave-field { bottom: 0; height: min(24vh, 210px); }
 }
+
+/* Cinematic hero artwork with live signal animation. */
+.hero { background-color: #010711; background-image: url('hero-cinematic.png'); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.hero::before, .hero::after, .hero-mark, .hero-eyebrow, .hero-grid, .hero-footer { display: none; }
+.hero .wave-field { display: block; z-index: 4; bottom: 0; height: 39%; opacity: .48; mix-blend-mode: screen; }
+.hero .wave-field svg { width: 132%; margin-left: -16%; }
+.hero .wave-one { animation-duration: 7s; }
+.hero .wave-two { animation-duration: 10s; }
+.hero .wave-three { animation-duration: 13s; }
+.hero .wave-four { animation-duration: 16s; }
+
+@media (max-width: 700px) {
+  .hero { min-height: 780px; background-position: center top; background-size: auto 100%; }
+  .hero .wave-field { height: 34%; opacity: .42; }
+}
