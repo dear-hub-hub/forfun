@@ -404,3 +404,107 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
   .news-more b { font-size: 18px; }
   .intro { grid-template-columns: 1fr; }
 }
+
+/* Unified section indices and editorial approach composition */
+.section-index,
+.news-kicker .section-index {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 44px;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -.045em;
+  line-height: 1;
+  opacity: .26;
+}
+
+.news-more span {
+  font-size: 22px;
+  line-height: 1.05;
+  letter-spacing: .045em;
+}
+
+.intro {
+  min-height: 650px;
+  padding-top: 112px;
+  padding-bottom: 90px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(340px, .75fr);
+  grid-template-rows: 1fr auto;
+  column-gap: clamp(70px, 10vw, 190px);
+  align-items: start;
+}
+
+.intro > div {
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 980px;
+}
+
+.intro .eyebrow {
+  margin-bottom: 28px;
+  color: var(--blue);
+  font-size: 12px;
+  letter-spacing: .18em;
+}
+
+.intro h2 {
+  max-width: 920px;
+  font-size: clamp(62px, 6.3vw, 112px);
+  line-height: .91;
+  letter-spacing: -.07em;
+}
+
+.intro h2 em {
+  color: rgba(9, 42, 37, .3);
+  font-style: normal;
+}
+
+.intro-copy {
+  grid-column: 2;
+  grid-row: 2;
+  position: relative;
+  max-width: 520px;
+  margin: 0;
+  padding: 28px 0 0 160px;
+  border-top: 1px solid rgba(9, 42, 37, .42);
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.intro-copy::before {
+  content: "AMPLIA VIEW 01";
+  position: absolute;
+  top: 31px;
+  left: 0;
+  color: var(--blue);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+
+@media (max-width: 760px) {
+  .section-index,
+  .news-kicker .section-index { width: 36px; font-size: 24px; }
+  .news-more span { font-size: 18px; }
+  .intro {
+    min-height: 540px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 70px;
+  }
+  .intro > div { grid-column: 1; grid-row: 1; }
+  .intro h2 { font-size: clamp(52px, 14vw, 76px); }
+  .intro-copy {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: end;
+    width: min(100%, 480px);
+    padding-left: 0;
+    padding-top: 54px;
+    font-size: 16px;
+  }
+  .intro-copy::before { top: 22px; }
+}
