@@ -603,3 +603,20 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
   }
   .intro-copy::before { top: -1px; left: 0; }
 }
+
+/* Final news button content alignment */
+.news-home .news-more {
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+}
+
+.news-home .news-more span,
+.news-home .news-more b {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.news-home .news-more b {
+  transform: translateY(-2px);
+}
