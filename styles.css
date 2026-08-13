@@ -620,3 +620,73 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
 .news-home .news-more b {
   transform: translateY(-2px);
 }
+
+/* Right-weighted recruiting composition and sequential reveal */
+.recruiting {
+  min-height: 460px;
+  display: grid;
+  grid-template-columns: minmax(220px, .65fr) minmax(620px, 1.35fr);
+  grid-template-rows: 1fr auto;
+  gap: 35px 7vw;
+  padding: 92px 7vw 64px;
+  overflow: hidden;
+}
+
+.recruiting-title {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  justify-self: end;
+  width: min(100%, 920px);
+}
+
+.recruiting-title h2 { margin-top: 14px; }
+.recruiting-title h2 span,
+.recruiting-title h2 em { display: inline-block; will-change: transform, opacity, filter; }
+.recruiting-title h2 span { opacity: 0; filter: blur(10px); transform: translateX(-180px); }
+.recruiting-title h2 em { opacity: 0; filter: blur(22px); transform: translateY(20px); }
+
+.recruiting.is-visible .recruiting-title h2 span {
+  animation: recruiting-arrive 1.05s cubic-bezier(.16,.8,.22,1) forwards;
+}
+
+.recruiting.is-visible .recruiting-title h2 em {
+  animation: recruiting-focus 1.45s .85s cubic-bezier(.2,.7,.2,1) forwards;
+}
+
+.recruiting-copy {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+  align-self: end;
+  width: min(100%, 560px);
+  max-width: none !important;
+  padding-top: 0 !important;
+}
+
+.recruiting-copy > p { margin: 0; }
+.recruiting-copy .button { float: right; margin-top: 25px; }
+
+@keyframes recruiting-arrive {
+  0% { opacity: 0; filter: blur(10px); transform: translateX(-180px); }
+  65% { opacity: 1; filter: blur(1px); transform: translateX(8px); }
+  100% { opacity: 1; filter: blur(0); transform: translateX(0); }
+}
+
+@keyframes recruiting-focus {
+  0% { opacity: 0; filter: blur(22px); transform: translateY(20px); }
+  45% { opacity: .38; filter: blur(12px); }
+  100% { opacity: 1; filter: blur(0); transform: translateY(0); }
+}
+
+@media (max-width: 800px) {
+  .recruiting { min-height: 520px; grid-template-columns: 1fr; grid-template-rows: 1fr auto; padding: 76px 7vw 48px; }
+  .recruiting-title, .recruiting-copy { grid-column: 1; width: 100%; }
+  .recruiting-title { grid-row: 1; align-self: center; }
+  .recruiting-copy { grid-row: 2; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .recruiting-title h2 span,
+  .recruiting-title h2 em { opacity: 1; filter: none; transform: none; animation: none !important; }
+}
