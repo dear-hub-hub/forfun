@@ -372,6 +372,27 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
   transition: transform .25s ease, background-color .25s ease;
 }
 
+/* Compact news archive button */
+.news-more {
+  width: 104px;
+  height: 104px;
+  padding: 0 18px;
+}
+
+.news-more span {
+  font-size: 13px;
+  line-height: 1.05;
+  letter-spacing: .025em;
+}
+
+.news-more b { font-size: 20px; }
+
+@media (max-width: 760px) {
+  .news-more { width: 88px; height: 88px; padding: 0 14px; }
+  .news-more span { font-size: 11px; }
+  .news-more b { font-size: 17px; }
+}
+
 .news-more span {
   color: #fff;
   font-size: 11px;
