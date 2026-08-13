@@ -1093,3 +1093,117 @@ body > footer .brand-mark {
   .contact-details { bottom: 22px; }
   .contact-details article { min-height: 0; padding-top: 18px; padding-bottom: 20px; }
 }
+
+/* Balanced research split and animated AMPLIA watermark */
+.research {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.research::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  right: 9%;
+  width: clamp(280px, 34vw, 650px);
+  aspect-ratio: 80 / 84;
+  background: url("amplia-mark-vector.svg") center / contain no-repeat;
+  opacity: .035;
+  transform: translateY(-45%) rotate(-4deg) scale(.94);
+  transition: opacity 1s ease, transform 1.4s cubic-bezier(.2,.7,.2,1);
+  animation: research-mark-float 9s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.research:hover::before,
+.research:focus-within::before {
+  opacity: .14;
+  transform: translateY(-50%) rotate(0) scale(1);
+}
+
+.research > * { position: relative; z-index: 1; }
+
+.research-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  gap: 0;
+}
+
+.research-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: rgba(120,193,255,.28);
+  transform: translateX(-.5px);
+  pointer-events: none;
+}
+
+.research-content > .interests-panel,
+.research-content > .projects-panel {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+}
+
+.research-content > .interests-panel {
+  padding: 42px clamp(42px,4vw,78px) 28px 0;
+}
+
+.research-content > .projects-panel {
+  padding: 42px 0 145px clamp(42px,4vw,78px);
+}
+
+.interests-image {
+  position: static !important;
+  inset: auto !important;
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 25px 0 23px !important;
+  padding: 0 !important;
+  border: 1px solid rgba(105,183,245,.26) !important;
+  background: #06111f !important;
+  object-fit: contain !important;
+  filter: none !important;
+  cursor: default !important;
+}
+
+.interests-image:hover,
+.interests-image:focus {
+  position: static !important;
+  width: 100% !important;
+  height: auto !important;
+  margin: 25px 0 23px !important;
+  padding: 0 !important;
+  filter: none !important;
+  cursor: default !important;
+  outline: none !important;
+}
+
+.projects-panel > ul { width: 100%; }
+
+@keyframes research-mark-float {
+  0%,100% { margin-top: -16px; }
+  50% { margin-top: 16px; }
+}
+
+@media (max-width: 800px) {
+  .research-content { grid-template-columns: 1fr; }
+  .research-content::after { display: none; }
+  .research-content > .interests-panel,
+  .research-content > .projects-panel { padding-right: 0; padding-left: 0; }
+  .research::before { right: -12%; width: 76vw; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .research::before { animation: none; }
+}
