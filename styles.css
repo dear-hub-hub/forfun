@@ -248,7 +248,7 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
 }
 
 /* Live cinematic composition: clean artwork, crisp HTML type, fully animated signals. */
-.hero { --hero-scroll: 0; background-image: url('hero-cinematic-clean.png'); background-position: center 42%; }
+.hero { --hero-scroll: 0; background-image: url('hero-cinematic-clean.png'); background-position: center 58%; }
 .hero .hero-grid { display: block; z-index: 6; width: min(1120px, 100%); transform: translateY(-3vh); }
 .hero .hero-title { overflow: visible; padding: 0 .08em; color: #fff; font-size: clamp(83px, 10.7vw, 172px); letter-spacing: -.045em; filter: none; text-shadow: 0 4px 0 rgba(0,0,0,.32), 0 9px 18px rgba(0,0,0,.62); }
 .hero .hero-title b { display: inline-block; padding: 0 .055em .03em .02em; color: transparent; background: linear-gradient(180deg,#79ccff 0%,#49b1f7 20%,#168de8 48%,#0667ce 73%,#064690 100%); background-clip: text; -webkit-background-clip: text; letter-spacing: -.035em; filter: contrast(1.12) saturate(1.12); }
@@ -280,15 +280,9 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
 @keyframes wave-low-right { 0%,100% { transform: translateX(11%) translateY(128px) scaleY(.46); } 50% { transform: translateX(-11%) translateY(108px) scaleY(.57); } }
 
 .circuit-pulses { position: absolute; inset: 0; z-index: 2; overflow: hidden; pointer-events: none; }
-.circuit-pulses i { --travel: 34vw; position: absolute; width: 5px; height: 5px; border-radius: 50%; background: #e8f8ff; box-shadow: 0 0 5px #fff, 0 0 12px #36a9ff, 0 0 23px #087ef0; opacity: 0; animation: circuit-light 6s linear infinite; }
-.circuit-pulses i:nth-child(1) { top: 18%; left: 16%; --travel: 31vw; animation-duration: 7.5s; }
-.circuit-pulses i:nth-child(2) { top: 25%; left: 54%; --travel: 29vw; animation-duration: 9s; animation-delay: -3s; }
-.circuit-pulses i:nth-child(3) { top: 31%; left: 10%; --travel: 38vw; animation-duration: 11s; animation-delay: -7s; }
-.circuit-pulses i:nth-child(4) { top: 37%; left: 59%; --travel: 30vw; animation-duration: 8.2s; animation-delay: -5s; }
-.circuit-pulses i:nth-child(5) { top: 43%; left: 6%; --travel: 41vw; animation-duration: 13s; animation-delay: -2s; }
-.circuit-pulses i:nth-child(6) { top: 49%; left: 55%; --travel: 34vw; animation-duration: 10s; animation-delay: -8s; }
-.circuit-pulses i:nth-child(7) { top: 55%; left: 18%; --travel: 27vw; animation-duration: 8.8s; animation-delay: -4s; }
-@keyframes circuit-light { 0% { opacity: 0; transform: translateX(0) scale(.55); } 12% { opacity: .95; } 78% { opacity: .8; } 100% { opacity: 0; transform: translateX(var(--travel)) scale(1.15); } }
+.circuit-pulses svg { display: block; width: 100%; height: 100%; }
+.circuit-pulses path { fill: none; stroke: none; }
+.circuit-pulses circle { fill: #effaff; stroke: #47b6ff; stroke-width: 1.5; opacity: .92; }
 
 @media (max-width: 700px) {
   .hero .hero-grid { transform: translateY(-4vh); }
@@ -298,5 +292,5 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
   .hero .hero-message { font-size: 15px; }
   .hero .hero-copy { padding: 0 8px; font-size: 10px; }
   .hero .wave-field { height: 54%; }
-  .circuit-pulses i { --travel: 48vw; }
+  .hero { background-position: center 56%; }
 }
