@@ -200,3 +200,19 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
   .intro > .section-number, .research-heading .section-number { font-size: 30px; }
   .research-heading .eyebrow { font-size: 24px; }
 }
+
+/* Wide news composition and oversized translucent section numbers. */
+.news-home { display: grid; grid-template-columns: 150px minmax(0, 1fr); column-gap: 50px; align-items: start; padding-inline: 5vw; }
+.news-home > .section-number, .intro > .section-number, .research-heading .section-number { font-size: 108px; font-weight: 900; line-height: .8; opacity: .5; }
+.news-home > .section-number, .intro > .section-number { color: var(--ink); }
+.research-heading .section-number { color: #fff; }
+.news-shell { width: 100%; max-width: none; margin: 0; }
+.news-more { grid-column: 2; margin-left: 0; }
+.news-list .tag.research { background: transparent; box-shadow: none; }
+
+@media (max-width: 700px) {
+  .news-home { display: block; padding-inline: 5vw; }
+  .news-home > .section-number, .intro > .section-number, .research-heading .section-number { font-size: 60px; }
+  .news-home > .section-number { display: block; margin-bottom: 38px; }
+  .news-more { width: 100%; }
+}
