@@ -1060,3 +1060,28 @@ body > footer .brand-mark {
   .contact-details article { padding: 16px 0; }
   .contact-map::before { top: -75px; height: 105px; }
 }
+
+/* Prevent contact detail copy from clipping. */
+.contact-details {
+  bottom: 42px;
+  align-items: stretch;
+  overflow: visible;
+}
+.contact-details article {
+  min-height: 230px;
+  padding-top: 32px;
+  padding-bottom: 36px;
+  overflow: visible;
+}
+.contact-details p,
+.contact-details a {
+  display: block;
+  padding-bottom: 3px;
+  line-height: 1.85;
+  overflow: visible;
+}
+
+@media (max-width: 900px) {
+  .contact-details { bottom: 22px; }
+  .contact-details article { min-height: 0; padding-top: 18px; padding-bottom: 20px; }
+}
