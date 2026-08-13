@@ -633,10 +633,10 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
 }
 
 .recruiting-title {
-  grid-column: 2;
+  grid-column: 1 / -1;
   grid-row: 1;
   align-self: center;
-  justify-self: end;
+  justify-self: start;
   width: min(100%, 920px);
 }
 
@@ -647,11 +647,11 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
 .recruiting-title h2 em { opacity: 0; filter: blur(22px); transform: translateY(20px); }
 
 .recruiting.is-visible .recruiting-title h2 span {
-  animation: recruiting-arrive 1.05s cubic-bezier(.16,.8,.22,1) forwards;
+  animation: recruiting-arrive 1.8s cubic-bezier(.16,.8,.22,1) forwards;
 }
 
 .recruiting.is-visible .recruiting-title h2 em {
-  animation: recruiting-focus 1.45s .85s cubic-bezier(.2,.7,.2,1) forwards;
+  animation: recruiting-focus 2.35s 1.45s cubic-bezier(.2,.7,.2,1) forwards;
 }
 
 .recruiting-copy {
