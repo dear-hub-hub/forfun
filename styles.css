@@ -216,3 +216,18 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
   .news-home > .section-number { display: block; margin-bottom: 38px; }
   .news-more { width: 100%; }
 }
+
+/* Full-viewport hero with vertically centered content. */
+.hero { height: calc(100svh - 76px); min-height: 900px; max-height: none; padding: 0 5vw; justify-content: center; }
+.hero-eyebrow { position: absolute; top: clamp(54px, 8vh, 105px); left: 50%; margin: 0; transform: translateX(-50%); white-space: nowrap; }
+.hero-grid { flex: none; width: min(1000px, 100%); margin: 0 auto; transform: translateY(-2vh); }
+.hero-mark { top: 50%; }
+.wave-field { bottom: 0; height: min(29vh, 330px); }
+
+@media (max-width: 700px) {
+  .hero { height: calc(100svh - 65px); min-height: 780px; padding: 0 5vw; }
+  .hero-eyebrow { top: 42px; max-width: 90vw; white-space: normal; text-align: center; }
+  .hero-grid { margin: 0 auto; transform: translateY(-1vh); }
+  .hero-mark { top: 48%; }
+  .wave-field { bottom: 0; height: min(24vh, 210px); }
+}
