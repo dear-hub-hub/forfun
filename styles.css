@@ -298,3 +298,109 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
   .hero .wave-field { height: 43%; }
   .hero { background-position: center 56%; }
 }
+/* Section navigation refresh */
+.section-index {
+  color: currentColor;
+  font-size: 1.1em;
+  font-weight: 900;
+  letter-spacing: -.04em;
+  line-height: 1;
+  opacity: .26;
+}
+
+.section-heading > div,
+.contact-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.section-heading > div .eyebrow,
+.contact-label .eyebrow { margin: 0; }
+
+.news-home {
+  display: block;
+  position: relative;
+  padding-bottom: 160px;
+}
+
+.news-shell { width: 100%; }
+
+.news-kicker {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: clamp(36px, 3.9vw, 55px);
+  text-transform: uppercase;
+}
+
+.news-kicker .section-index {
+  font-size: .72em;
+  opacity: .26;
+}
+
+.news-icon {
+  width: .9em;
+  height: .9em;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: var(--blue);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.news-label { line-height: 1; }
+
+.news-more {
+  position: absolute;
+  right: 5vw;
+  bottom: 34px;
+  width: 116px;
+  height: 116px;
+  margin: 0;
+  padding: 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  box-shadow: 0 16px 40px rgba(0, 137, 255, .22);
+  text-decoration: none;
+  transition: transform .25s ease, background-color .25s ease;
+}
+
+.news-more span {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 850;
+  line-height: 1.2;
+  letter-spacing: .08em;
+}
+
+.news-more b {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.news-more:hover {
+  background: var(--ink);
+  transform: translateY(-5px);
+}
+
+.intro { grid-template-columns: 1.25fr .7fr; }
+
+.research-heading .section-index,
+.contact-label .section-index { color: #fff; }
+
+@media (max-width: 760px) {
+  .news-home { padding-bottom: 132px; }
+  .news-kicker { gap: 11px; font-size: clamp(30px, 9vw, 42px); }
+  .news-more { right: 7vw; bottom: 24px; width: 92px; height: 92px; padding: 0 16px; }
+  .news-more span { font-size: 9px; }
+  .news-more b { font-size: 18px; }
+  .intro { grid-template-columns: 1fr; }
+}
