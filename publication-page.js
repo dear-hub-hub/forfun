@@ -5,7 +5,7 @@ fetch(source)
   .then((text) => {
     const root = document.querySelector('.pub-list');
     const lines = text.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
-    const isSectionName = (line) => /^(Journal|Conference|Patents|Seminars and Talk)$/i.test(line);
+    const isSectionName = (line) => /^(Journal|Conference|Patents|Seminars and Talks?)$/i.test(line);
     const isAuthorship = (line) => /^\*\s*Corresponding Authorship$/i.test(line) || /Co-First Author$/i.test(line) || /^Bold: AMPLIA Member$/i.test(line);
     const isAccepted = (line) => /^\(Accepted\)/i.test(line);
     const isDomesticHeading = (line) => /^Domestic Conferences$/i.test(line);

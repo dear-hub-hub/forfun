@@ -9,9 +9,9 @@ body{margin:0;background:var(--cream);color:var(--ink)}
 .pub-intro{position:sticky;top:35px;align-self:start}
 .pub-intro h2{margin:0;font-size:clamp(58px,7vw,112px);line-height:.9;letter-spacing:-.075em}
 .pub-list{border-top:1px solid var(--ink)}
-.pub-list h3{margin:0;padding:36px 0 20px;font-size:clamp(32px,3vw,52px);letter-spacing:-.06em}
+.pub-list h3{margin:0;padding:36px 0 20px;font-size:clamp(32px,3vw,52px);font-weight:700;line-height:normal;letter-spacing:-.06em}
 .pub-list .domestic-heading{color:var(--ink)}
-.pub-list .patent-heading{color:var(--ink)}
+.pub-list .patent-heading{color:var(--ink);font-size:clamp(32px,3vw,52px);font-weight:700;line-height:normal;letter-spacing:-.06em}
 .pub-list article{display:grid;grid-template-columns:75px 1fr;gap:24px;padding:24px 0;border-top:1px solid var(--line)}
 .pub-list article.unnumbered{display:block}
 .pub-list article>span{color:var(--blue);font-size:12px;font-weight:850}
