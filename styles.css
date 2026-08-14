@@ -1362,6 +1362,35 @@ main > section:not(.hero) { scroll-margin-top: 76px; }
   .research-more b { font-size: 17px; }
 }
 
+/* Lock both circular VIEW MORE controls to one visual system. */
+.news-home .news-more,
+.research .research-more {
+  width: 104px !important;
+  min-width: 104px !important;
+  height: 104px !important;
+  padding: 0 18px !important;
+  gap: 10px !important;
+  justify-content: center !important;
+}
+.news-home .news-more span,
+.research .research-more span { font-size: 13px !important; line-height: 1.05 !important; }
+.news-home .news-more b,
+.research .research-more b { font-size: 20px !important; }
+
+@media (max-width: 760px) {
+  .news-home .news-more,
+  .research .research-more {
+    width: 88px !important;
+    min-width: 88px !important;
+    height: 88px !important;
+    padding: 0 14px !important;
+  }
+  .news-home .news-more span,
+  .research .research-more span { font-size: 11px !important; }
+  .news-home .news-more b,
+  .research .research-more b { font-size: 17px !important; }
+}
+
 .people { min-height: 0; padding-top: 56px; padding-bottom: 56px; }
 .people .section-heading,
 .publications .section-heading { margin-bottom: 38px; }
