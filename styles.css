@@ -1182,6 +1182,39 @@ body > footer .brand > span {
   .contact-details article { min-height: 0; padding-top: 18px; padding-bottom: 20px; }
 }
 
+/* Improve contact-panel legibility and reveal more of the lab photograph. */
+.contact-photo {
+  opacity: .36;
+  filter: saturate(.58) contrast(1.12) brightness(1.06);
+}
+.contact::after {
+  background: linear-gradient(90deg,#061321 0%,rgba(6,19,33,.96) 27%,rgba(6,19,33,.73) 54%,rgba(6,19,33,.16) 100%);
+}
+.contact-details article {
+  min-height: 255px;
+  padding-top: 38px;
+  padding-bottom: 42px;
+}
+.contact-details span {
+  margin-bottom: 38px;
+  font-size: 15px;
+}
+.contact-details p {
+  font-size: 21px;
+  line-height: 1.65;
+}
+.contact-details a {
+  font-size: 24px;
+  line-height: 1.65;
+}
+@media (max-width: 900px) {
+  .contact-photo { opacity: .31; }
+  .contact-details article { min-height: 0; padding-top: 22px; padding-bottom: 24px; }
+  .contact-details span { margin-bottom: 12px; font-size: 12px; }
+  .contact-details p,
+  .contact-details a { font-size: 17px; line-height: 1.55; }
+}
+
 /* Balanced research split and animated AMPLIA watermark */
 .research {
   position: relative;
