@@ -12,3 +12,35 @@
 .team-section{display:block;padding:105px 8vw}.section-intro{position:static;margin-bottom:52px}.section-intro>p.eyebrow:last-child,.undergraduate-heading .eyebrow{max-width:none;color:var(--ink);font-size:clamp(36px,4vw,64px);font-weight:800;line-height:.95;letter-spacing:-.07em}.member-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.member-card{grid-template-columns:minmax(84px,30%) minmax(0,1fr);gap:22px;min-width:0;padding:26px}.member-card>img{width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;object-position:center;background:#fff}.member-card h3{font-size:clamp(24px,1.9vw,32px)}.member-card h3 small{font-size:15px}.course{font-size:13px}.member-card a{font-size:12px;overflow-wrap:anywhere}.member-card li{font-size:11px}.undergraduate-heading h2{display:none}
 @media(max-width:1100px){.member-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.member-card{grid-template-columns:105px minmax(0,1fr)}}
 @media(max-width:700px){.section-intro{margin-bottom:34px}.section-intro>p.eyebrow:last-child,.undergraduate-heading .eyebrow{font-size:clamp(30px,9vw,44px)}.member-grid{grid-template-columns:1fr}.member-card{grid-template-columns:84px minmax(0,1fr)}.undergraduate-section{grid-template-columns:1fr;gap:34px}}
+
+/* Compact four-column graduate student grid. */
+.member-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.member-card,
+.member-card:nth-child(odd),
+.member-card:nth-child(even) {
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 15px;
+  min-height: 0;
+  padding: 18px;
+}
+.member-card > img { width: 92px; height: 123px; aspect-ratio: auto; object-fit: cover; }
+.member-card h3 { font-size: clamp(20px, 1.35vw, 26px); }
+.member-card h3 small { margin-top: 5px; font-size: 13px; }
+.course { margin-top: 12px; font-size: 12px; }
+.member-card a { font-size: 11px; }
+.member-card ul { gap: 5px; margin-top: 14px; }
+.member-card li { padding: 5px 7px; font-size: 10px; }
+
+@media (max-width: 1200px) {
+  .member-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .member-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .member-grid { grid-template-columns: 1fr; }
+  .member-card,
+  .member-card:nth-child(odd),
+  .member-card:nth-child(even) { grid-template-columns: 84px minmax(0, 1fr); padding: 16px; }
+  .member-card > img { width: 84px; height: 112px; }
+}
