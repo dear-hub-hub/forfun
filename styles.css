@@ -1329,3 +1329,56 @@ body > footer .brand > span {
 @media (prefers-reduced-motion: reduce) {
   .research::before { animation: none; }
 }
+
+/* Compact every content section below the hero; the hero remains untouched. */
+main > section:not(.hero) { scroll-margin-top: 76px; }
+.section-pad { padding-top: 56px; padding-bottom: 56px; }
+.news-home { padding-top: 44px; padding-bottom: 92px; }
+.news-kicker { padding-bottom: 14px; }
+.news-list article { min-height: 44px; padding-top: 9px; padding-bottom: 9px; }
+.news-more { bottom: 18px; width: 82px; height: 82px; padding: 0 13px; }
+.news-more span { font-size: 9px; }
+.news-more b { font-size: 17px; }
+
+.research-heading { margin-bottom: 34px; }
+.research-content > .interests-panel { padding-top: 24px; padding-bottom: 12px; }
+.research-content > .projects-panel { padding-top: 24px; padding-bottom: 92px; }
+.projects-panel > ul { gap: 11px; padding-top: 10px; }
+.interests-image { margin-top: 16px !important; margin-bottom: 14px !important; }
+.interest-tags { margin-top: 14px; }
+.research-more { width: 82px; height: 82px; padding: 0 14px; }
+.research-more span { font-size: 10px; }
+
+.people { min-height: 0; padding-top: 56px; padding-bottom: 56px; }
+.people .section-heading,
+.publications .section-heading { margin-bottom: 38px; }
+.people-card { margin-top: 0; padding-top: 38px; padding-bottom: 42px; gap: clamp(28px, 3vw, 54px); }
+.people-card .pi-actions { gap: 11px; }
+.people-card .pi-actions a { min-height: 48px; }
+.people-email-row { gap: 26px; padding-top: 0; }
+.people-email-row a.people-email { min-height: 52px; }
+
+.publication-hub > a { min-height: 210px; }
+.publication-hub h3 { margin-top: 24px; }
+.publications { padding-top: 56px; padding-bottom: 56px; }
+
+.contact { min-height: 650px; padding: 54px 5vw; }
+.contact-inline-map { height: 240px; margin-top: 24px; }
+.contact-details { bottom: 24px; }
+.contact-details article { min-height: 205px; padding-top: 26px; padding-bottom: 28px; }
+.contact-details span { margin-bottom: 20px; }
+body > footer { padding-top: 17px; padding-bottom: 17px; }
+
+@media (max-width: 900px) {
+  .section-pad { padding-top: 42px; padding-bottom: 42px; }
+  .news-home { padding-top: 38px; padding-bottom: 82px; }
+  .research-content > .projects-panel { padding-bottom: 78px; }
+  .people { padding-top: 42px; padding-bottom: 42px; }
+  .people .section-heading,
+  .publications .section-heading { margin-bottom: 30px; }
+  .people-card { padding-top: 30px; padding-bottom: 32px; }
+  .publications { padding-top: 42px; padding-bottom: 42px; }
+  .contact { min-height: 790px; padding-top: 42px; padding-bottom: 42px; }
+  .contact-inline-map { height: 210px; margin-top: 20px; }
+  .contact-details { bottom: 18px; }
+}
