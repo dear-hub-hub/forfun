@@ -1391,6 +1391,17 @@ main > section:not(.hero) { scroll-margin-top: 76px; }
   .research .research-more b { font-size: 17px !important; }
 }
 
+/* Requested research and people typography adjustments. */
+.interests-panel h3 { max-width: none; font-size: clamp(22px, 2vw, 30px); white-space: nowrap; }
+.projects-panel > .tag { font-size: 40px; line-height: 1; letter-spacing: -.035em; }
+.pi-details .tag { font-size: 24px; line-height: 1; }
+.people-email-row { grid-template-columns: minmax(280px, 320px); justify-content: end; }
+
+@media (max-width: 800px) {
+  .interests-panel h3 { white-space: normal; }
+  .people-email-row { grid-template-columns: minmax(0, 1fr); }
+}
+
 .people { min-height: 0; padding-top: 56px; padding-bottom: 56px; }
 .people .section-heading,
 .publications .section-heading { margin-bottom: 38px; }
