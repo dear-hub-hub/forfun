@@ -893,7 +893,7 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
   max-width: none;
   margin-right: auto;
   margin-left: auto;
-  grid-template-columns: 190px minmax(360px, 1fr) minmax(330px, .72fr);
+  grid-template-columns: 190px minmax(320px, .8fr) minmax(680px, 1.2fr);
   align-items: center;
   gap: clamp(40px, 5vw, 90px);
 }
@@ -1054,12 +1054,13 @@ body > footer .brand > span {
   margin-bottom: clamp(55px, 6vw, 95px);
 }
 .people-email-row {
-  grid-column: 1 / -1;
+  grid-column: 3;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 320px);
+  grid-template-columns: minmax(260px, 1fr) minmax(280px, 320px);
   align-items: center;
-  gap: clamp(35px, 5vw, 90px);
+  gap: clamp(24px, 3vw, 48px);
   width: 100%;
+  justify-self: stretch;
   padding-top: 8px;
 }
 .people-email-row > p {
@@ -1087,7 +1088,7 @@ body > footer .brand > span {
   border-color: #168eed;
 }
 @media (max-width: 1000px) {
-  .people-email-row { grid-column: 1 / -1; }
+  .people-email-row { grid-column: 1 / -1; width: 100%; }
 }
 @media (max-width: 700px) {
   .people-email-row { grid-template-columns: 1fr; gap: 24px; }
