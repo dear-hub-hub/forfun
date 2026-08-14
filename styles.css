@@ -1054,7 +1054,7 @@ body > footer .brand > span {
   margin-bottom: clamp(55px, 6vw, 95px);
 }
 .people-email-row {
-  grid-column: 2 / -1;
+  grid-column: 1 / -1;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 320px);
   align-items: center;
