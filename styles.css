@@ -1352,8 +1352,15 @@ main > section:not(.hero) { scroll-margin-top: 76px; }
 .projects-panel > ul { gap: 11px; padding-top: 10px; }
 .interests-image { margin-top: 16px !important; margin-bottom: 14px !important; }
 .interest-tags { margin-top: 14px; }
-.research-more { width: 82px; height: 82px; padding: 0 14px; }
-.research-more span { font-size: 10px; }
+.research-more { width: 104px; height: 104px; padding: 0 18px; }
+.research-more span { font-size: 13px; line-height: 1.05; }
+.research-more b { font-size: 20px; }
+
+@media (max-width: 760px) {
+  .research-more { width: 88px; height: 88px; padding: 0 14px; }
+  .research-more span { font-size: 11px; }
+  .research-more b { font-size: 17px; }
+}
 
 .people { min-height: 0; padding-top: 56px; padding-bottom: 56px; }
 .people .section-heading,
