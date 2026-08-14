@@ -4,14 +4,16 @@ body{margin:0;background:var(--cream);color:var(--ink)}
 .site-header{height:76px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:7px;color:var(--ink);font-size:20px;font-weight:850;text-decoration:none}
 .brand img{width:27px}
-.back{color:var(--ink);font-size:12px;font-weight:800;text-decoration:none}
+.back{color:var(--ink);font-size:19.2px;font-weight:800;text-decoration:none}
 .pub-page{display:grid;grid-template-columns:.42fr 1.58fr;gap:70px;min-height:calc(100vh - 76px);padding:82px 8vw 100px}
 .pub-intro{position:sticky;top:35px;align-self:start}
 .pub-intro h2{margin:0;font-size:clamp(58px,7vw,112px);line-height:.9;letter-spacing:-.075em}
 .pub-list{border-top:1px solid var(--ink)}
 .pub-list h3{margin:0;padding:36px 0 20px;font-size:clamp(32px,3vw,52px);letter-spacing:-.06em}
 .pub-list .domestic-heading{color:var(--ink)}
+.pub-list .patent-heading{color:var(--ink)}
 .pub-list article{display:grid;grid-template-columns:75px 1fr;gap:24px;padding:24px 0;border-top:1px solid var(--line)}
+.pub-list article.unnumbered{display:block}
 .pub-list article>span{color:var(--blue);font-size:12px;font-weight:850}
 .pub-list p{margin:0;color:var(--ink);font-size:16px;line-height:1.65}
 .pub-list strong{font-weight:900}
