@@ -356,8 +356,8 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
 .hero .wave-five { stroke-width: 1.5; opacity: .58; filter: drop-shadow(0 0 7px #087eea); animation: wave-surge-high 8.5s ease-in-out infinite; }
 .hero .wave-six { stroke-width: 1; opacity: .42; animation: wave-surge-wide 14s ease-in-out infinite reverse; }
 .hero .wave-seven { stroke-width: 1.25; opacity: .5; filter: drop-shadow(0 0 5px #087eea); animation: wave-surge-high 19s ease-in-out infinite reverse; }
-.hero .digital-wave { fill: none; stroke: rgba(255,255,255,.3); stroke-width: 2; stroke-linecap: square; stroke-linejoin: miter; vector-effect: non-scaling-stroke; filter: drop-shadow(0 0 4px rgba(150,210,255,.42)); }
-.hero .digital-wave-pulse { fill: none; stroke: #fff; stroke-width: 4.5; stroke-linecap: square; stroke-linejoin: miter; vector-effect: non-scaling-stroke; stroke-dasharray: 42 28; stroke-dashoffset: 0; filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 9px rgba(125,205,255,1)) drop-shadow(0 0 18px rgba(35,145,255,.92)); will-change: stroke-dashoffset; animation: digital-signal-forward 1.15s linear infinite; }
+.hero .digital-wave { fill: none; stroke: rgba(255,255,255,.18); stroke-width: 1.1; stroke-linecap: square; stroke-linejoin: miter; vector-effect: non-scaling-stroke; filter: drop-shadow(0 0 3px rgba(150,210,255,.24)); }
+.hero .digital-wave-pulse { fill: none; stroke: rgba(255,255,255,.74); stroke-width: 2.1; stroke-linecap: square; stroke-linejoin: miter; vector-effect: non-scaling-stroke; stroke-dasharray: 42 28; stroke-dashoffset: 0; filter: drop-shadow(0 0 3px rgba(210,239,255,.65)) drop-shadow(0 0 8px rgba(70,170,255,.5)); will-change: stroke-dashoffset; animation: digital-signal-forward 1.15s linear infinite; }
 @keyframes wave-surge-high { 0%,100% { transform: translateX(-7%) translateY(82px) scaleY(.68); } 38% { transform: translateX(8%) translateY(36px) scaleY(.82); } 72% { transform: translateX(-3%) translateY(58px) scaleY(.75); } }
 @keyframes wave-surge-wide { 0%,100% { transform: translateX(8%) translateY(78px) scaleY(.7); } 48% { transform: translateX(-9%) translateY(32px) scaleY(.86); } }
 .hero .wave-one { stroke-width: 2.8; opacity: 1; filter: drop-shadow(0 0 7px #078eff); animation: wave-low-left 9.3s ease-in-out infinite; }
@@ -383,8 +383,8 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
   .hero .hero-copy { margin-top: 20px; padding: 0 8px; font-size: 12px; line-height: 1.65; }
   .hero .hero-actions .button { padding: 13px 17px; font-size: 12px; }
   .hero .wave-field { bottom: max(0px, calc(845px - 100svh)); height: 43%; }
-  .hero .digital-wave { stroke-width: 2; }
-  .hero .digital-wave-pulse { stroke-width: 4; }
+  .hero .digital-wave { stroke-width: 1; }
+  .hero .digital-wave-pulse { stroke-width: 1.8; }
   .hero { background-position: center 56%; }
 }
 /* Section navigation refresh */
