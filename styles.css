@@ -360,11 +360,11 @@ footer { display: flex; align-items: center; justify-content: space-between; pad
 .hero .digital-wave-pulse { fill: none; stroke: rgba(255,255,255,.42); stroke-width: 1.6; stroke-linecap: square; stroke-linejoin: miter; vector-effect: non-scaling-stroke; stroke-dasharray: 90 1510; stroke-dashoffset: 90; filter: drop-shadow(0 0 2px rgba(220,243,255,.35)) drop-shadow(0 0 5px rgba(70,170,255,.22)); will-change: stroke-dashoffset; animation: digital-signal-forward 14.4s linear infinite; }
 @keyframes wave-surge-high { 0%,100% { transform: translateX(-7%) translateY(82px) scaleY(.68); } 38% { transform: translateX(8%) translateY(36px) scaleY(.82); } 72% { transform: translateX(-3%) translateY(58px) scaleY(.75); } }
 @keyframes wave-surge-wide { 0%,100% { transform: translateX(8%) translateY(78px) scaleY(.7); } 48% { transform: translateX(-9%) translateY(32px) scaleY(.86); } }
-.hero .wave-one { stroke-width: 2.8; opacity: 1; filter: drop-shadow(0 0 7px #078eff); animation: wave-low-left 9.3s ease-in-out infinite; }
-.hero .wave-two { animation: wave-low-right 12.9s ease-in-out infinite alternate; }
-.hero .wave-three { animation: wave-low-left 17.9s ease-in-out infinite reverse; }
-.hero .wave-four { animation: wave-low-right 24.3s ease-in-out infinite reverse; }
-.hero .wave-five { animation-duration: 12.1s; }
+.hero .wave-one { stroke-width: 2.8; opacity: .62; filter: drop-shadow(0 0 6px rgba(7,142,255,.68)); animation: wave-low-left 37.2s ease-in-out infinite; }
+.hero .wave-two { opacity: .42; animation: wave-low-right 51.6s ease-in-out infinite alternate; }
+.hero .wave-three { opacity: .3; animation: wave-low-left 71.6s ease-in-out infinite reverse; }
+.hero .wave-four { opacity: .2; animation: wave-low-right 97.2s ease-in-out infinite reverse; }
+.hero .wave-five { opacity: .34; animation-duration: 48.4s; }
 .hero .wave-six { animation-duration: 20s; }
 .hero .wave-seven { animation-duration: 27.1s; }
 @keyframes wave-low-left { 0%,100% { transform: translateX(-10%) translateY(44px) scaleY(.58); } 50% { transform: translateX(10%) translateY(24px) scaleY(.68); } }
