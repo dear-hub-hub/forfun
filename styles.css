@@ -1416,7 +1416,7 @@ main > section:not(.hero) { scroll-margin-top: 76px; }
 .people { min-height: 0; padding-top: 56px; padding-bottom: 56px; }
 .people .section-heading,
 .publications .section-heading { margin-bottom: 38px; }
-.people-card { margin-top: 0; padding-top: 38px; padding-bottom: 42px; gap: clamp(28px, 3vw, 54px); }
+.people-card { margin-top: 0; padding-top: 22px; padding-bottom: 22px; gap: clamp(28px, 3vw, 54px); }
 .people-card .pi-actions { gap: 11px; }
 .people-card .pi-actions a { min-height: 48px; }
 .people-email-row { gap: 26px; padding-top: 0; }
@@ -1440,7 +1440,7 @@ body > footer { padding-top: 17px; padding-bottom: 17px; }
   .people { padding-top: 42px; padding-bottom: 42px; }
   .people .section-heading,
   .publications .section-heading { margin-bottom: 30px; }
-  .people-card { padding-top: 30px; padding-bottom: 32px; }
+  .people-card { padding-top: 18px; padding-bottom: 18px; }
   .publications { padding-top: 42px; padding-bottom: 42px; }
   .contact { min-height: 790px; padding-top: 42px; padding-bottom: 42px; }
   .contact-inline-map { height: 210px; margin-top: 20px; }
