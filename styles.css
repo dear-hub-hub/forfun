@@ -1392,13 +1392,24 @@ main > section:not(.hero) { scroll-margin-top: 76px; }
 }
 
 /* Requested research and people typography adjustments. */
-.interests-panel h3 { max-width: none; font-size: clamp(22px, 2vw, 30px); white-space: nowrap; }
-.projects-panel > .tag { font-size: 40px; line-height: 1; letter-spacing: -.035em; }
+.interests-panel h3,
+.projects-panel > .tag {
+  color: #f4f8fc;
+  font-size: clamp(22px, 2vw, 30px);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -.035em;
+}
+.interests-panel h3 { max-width: none; white-space: nowrap; }
+.projects-panel > .tag { margin: 15px 0 18px; }
 .pi-details .tag { font-size: 24px; line-height: 1; }
 .people-email-row { grid-template-columns: minmax(280px, 320px); justify-content: end; }
 
-@media (max-width: 800px) {
+@media (max-width: 1500px) {
   .interests-panel h3 { white-space: normal; }
+}
+
+@media (max-width: 800px) {
   .people-email-row { grid-template-columns: minmax(0, 1fr); }
 }
 
