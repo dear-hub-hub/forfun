@@ -48,3 +48,9 @@
 /* Match undergraduate names to the graduate student cards. */
 .undergraduate-list h3 { font-size: clamp(20px, 1.35vw, 26px); }
 .undergraduate-list h3 small { font-size: 13px; }
+
+/* Tighter undergraduate list spacing. */
+.undergraduate-list li { min-height: 62px; }
+@media (max-width: 600px) {
+  .undergraduate-list li { min-height: 54px; }
+}
