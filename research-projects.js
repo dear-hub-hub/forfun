@@ -14,23 +14,30 @@ projectLinks.forEach((link) => {
   link.addEventListener('click', () => setActiveProjectGroup(link.getAttribute('href').slice(1)));
 });
 
-const projectObserver = new IntersectionObserver((entries) => {
+const syncActiveProjectGroup = () => {
+  const readingLine = window.innerHeight * 0.35;
+  let activeGroup = projectGroups[0];
+
+  projectGroups.forEach((group) => {
+    if (group.getBoundingClientRect().top <= readingLine) activeGroup = group;
+  });
+
   if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8) {
-    setActiveProjectGroup(projectGroups.at(-1).id);
-    return;
+    activeGroup = projectGroups.at(-1);
   }
 
-  const visible = entries
-    .filter((entry) => entry.isIntersecting)
-    .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+  if (activeGroup) setActiveProjectGroup(activeGroup.id);
+};
 
-  if (visible) setActiveProjectGroup(visible.target.id);
-}, { rootMargin: '-18% 0px -58% 0px', threshold: [0.1, 0.35, 0.6] });
-
-projectGroups.forEach((group) => projectObserver.observe(group));
-
+let projectScrollTicking = false;
 window.addEventListener('scroll', () => {
-  if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8) {
-    setActiveProjectGroup(projectGroups.at(-1).id);
-  }
+  if (projectScrollTicking) return;
+  projectScrollTicking = true;
+  window.requestAnimationFrame(() => {
+    syncActiveProjectGroup();
+    projectScrollTicking = false;
+  });
 }, { passive: true });
+
+window.addEventListener('resize', syncActiveProjectGroup);
+syncActiveProjectGroup();
