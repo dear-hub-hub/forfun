@@ -45,5 +45,6 @@
   .member-card > img { width: 84px; height: 112px; }
 }
 
-/* Half-size undergraduate names. */
-.undergraduate-list h3 { font-size: clamp(12px, 1.075vw, 18px); }
+/* Match undergraduate names to the graduate student cards. */
+.undergraduate-list h3 { font-size: clamp(20px, 1.35vw, 26px); }
+.undergraduate-list h3 small { font-size: 13px; }
