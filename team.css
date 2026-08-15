@@ -44,3 +44,6 @@
   .member-card:nth-child(even) { grid-template-columns: 84px minmax(0, 1fr); padding: 16px; }
   .member-card > img { width: 84px; height: 112px; }
 }
+
+/* Half-size undergraduate names. */
+.undergraduate-list h3 { font-size: clamp(12px, 1.075vw, 18px); }
