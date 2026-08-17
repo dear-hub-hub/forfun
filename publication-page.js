@@ -20,6 +20,22 @@ fetch(source)
     let domesticNumber = domesticIndex < 0 ? 0 : lines.filter((line, index) => index > domesticIndex && isArticle(line)).length;
     let inDomesticSection = false;
 
+    const appendFormattedText = (element, line) => {
+      line.split(/(\*\*.*?\*\*|†)/g).filter(Boolean).forEach((part) => {
+        if (part === '†') {
+          const superscript = document.createElement('sup');
+          superscript.textContent = part;
+          element.append(superscript);
+        } else if (part.startsWith('**') && part.endsWith('**')) {
+          const strong = document.createElement('strong');
+          strong.textContent = part.slice(2, -2);
+          element.append(strong);
+        } else {
+          element.append(document.createTextNode(part));
+        }
+      });
+    };
+
     lines.forEach((line) => {
       if (isSectionName(line)) return;
 
@@ -43,7 +59,7 @@ fetch(source)
       if (isAuthorship(line) || isStatus(line)) {
         const note = document.createElement('div');
         note.className = `note ${isAuthorship(line) ? 'note-authorship' : 'note-status'}`;
-        note.textContent = /Co-First Author$/i.test(line) ? '†Co-First Author' : /^\*\s*Corresponding Authorship$/i.test(line) ? '*Corresponding Authorship' : line;
+        appendFormattedText(note, /Co-First Author$/i.test(line) ? '†Co-First Author' : /^\*\s*Corresponding Authorship$/i.test(line) ? '*Corresponding Authorship' : line);
         root.append(note);
         return;
       }
@@ -58,7 +74,7 @@ fetch(source)
 
       const article = document.createElement('article');
       const copy = document.createElement('p');
-      copy.textContent = line;
+      appendFormattedText(copy, line);
       if (isPatentPage) {
         article.className = 'unnumbered';
         article.append(copy);

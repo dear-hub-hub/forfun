@@ -1426,6 +1426,11 @@ main > section:not(.hero) { scroll-margin-top: 76px; }
 .publication-hub h3 { margin-top: 24px; }
 .publications { padding-top: 56px; padding-bottom: 56px; }
 
+/* Two-thirds-height publication navigation blocks. */
+.publication-hub > a { min-height: 140px; padding: 18px 20px; }
+.publication-hub h3 { margin-top: 14px; }
+.publication-hub > a > div { right: 20px; bottom: 16px; left: 20px; }
+
 .contact { min-height: 650px; padding: 54px 5vw; }
 .contact-inline-map { height: 240px; margin-top: 24px; }
 .contact-details { bottom: 24px; }

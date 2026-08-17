@@ -17,6 +17,7 @@ body{margin:0;background:var(--cream);color:var(--ink)}
 .pub-list article>span{color:var(--blue);font-size:12px;font-weight:850}
 .pub-list p{margin:0;color:var(--ink);font-size:16px;line-height:1.65}
 .pub-list strong{font-weight:900}
+.pub-list sup{position:relative;top:-.15em;font-size:.65em;font-weight:800;line-height:0;vertical-align:super}
 .note{padding:6px 0;color:var(--ink);font-size:16px;line-height:1.2}
 .note-authorship{text-align:right}
 .note-status{text-align:left}

@@ -7,24 +7,24 @@ Bold: AMPLIA Member
 (Submitted) at IEEE Transactions on Instrumentation and Measurement (TIM) [Corresponding Author]
 (Submitted) at IEEE Transactions on Very Large Scale Integration Systems (TVLSI) [Corresponding Author]
 2026
-Y. Kim, S. Park, W. Kim, H. Lee, J. Jun, N. Kim, and J. Rhee, "An Ultrasonic Sensor IC for Automotive Parking Assist with Module ID Detection", IEEE Sensors Journal, 2026.
-S. Sim, and J. Jun*, "A Charge Pump-Based Switched-Capacitor LDO With a Coarse-Fine VCO Achieving Sub-15-ns Settling Time from 0.45-V to 1-V Input Range", IEEE Transactions on Power Electronics (TPEL), vol. 41, no. 7, 10564–10574, Jul. 2026.
-J. Kim†, S. Kim†, and J. Jun*, "A Fully Synthesizable 12-bit Event-Driven TDC-Assisted Two-Step Counter for Imagers Achieving 0.49-LSB INL in 28-nm CMOS", IEEE Transactions on Very Large Scale Integration Systems (TVLSI), vol. 34, no. 7, 2316–2320, Jul. 2026.
-S. Sim, and J. Jun*, "Advancements in Active-Pixel-Type CMOS Image Sensor Design Techniques and Architectures for Wide Dynamic Range", Sensors, vol. 26, no. 2, pp. 1–25, Jan. 2026.
-W. Han†, K. Sim†, T. Kim, and J. Jun*, "Behavioural Modelling and Verification of a Novel Weighted System-Level Chopping for High-Resolution Incremental ADCs", Electronics Letters (EL), vol. 62, no. 1, pp.1–5, Jan. 2026.
+Y. Kim, S. Park, W. Kim, H. Lee, **J. Jun**, N. Kim, and J. Rhee, "An Ultrasonic Sensor IC for Automotive Parking Assist with Module ID Detection", IEEE Sensors Journal, 2026.
+**S. Sim**, and **J. Jun***, "A Charge Pump-Based Switched-Capacitor LDO With a Coarse-Fine VCO Achieving Sub-15-ns Settling Time from 0.45-V to 1-V Input Range", IEEE Transactions on Power Electronics (TPEL), vol. 41, no. 7, 10564–10574, Jul. 2026.
+**J. Kim**†, **S. Kim**†, and **J. Jun***, "A Fully Synthesizable 12-bit Event-Driven TDC-Assisted Two-Step Counter for Imagers Achieving 0.49-LSB INL in 28-nm CMOS", IEEE Transactions on Very Large Scale Integration Systems (TVLSI), vol. 34, no. 7, 2316–2320, Jul. 2026.
+**S. Sim**, and **J. Jun***, "Advancements in Active-Pixel-Type CMOS Image Sensor Design Techniques and Architectures for Wide Dynamic Range", Sensors, vol. 26, no. 2, pp. 1–25, Jan. 2026.
+**W. Han**†, **K. Sim**†, T. Kim, and **J. Jun***, "Behavioural Modelling and Verification of a Novel Weighted System-Level Chopping for High-Resolution Incremental ADCs", Electronics Letters (EL), vol. 62, no. 1, pp.1–5, Jan. 2026.
 2025
-W. Kim, S. Park, J. Yang, J. Jun, S. Kim, and J. Rhee, "A Wide Dynamic Range Optical Particulate Matter Sensor with On-chip Machine Learning Calibration", IEEE Sensors Journal, vol. 25, no. 22, pp.42018–42028, Nov. 2025.
+W. Kim, S. Park, J. Yang, **J. Jun**, S. Kim, and J. Rhee, "A Wide Dynamic Range Optical Particulate Matter Sensor with On-chip Machine Learning Calibration", IEEE Sensors Journal, vol. 25, no. 22, pp.42018–42028, Nov. 2025.
 [Book] "미래모빌리티개론", 초판, 인디펍(Indiepub), Aug. 2025. ISBN: 9791167567239
-J. Kang, J. Rhee, S. Kim, and J. Jun*, "A 21.6-bit Programmable-Gain Triple-Sampling Incremental ΔΣ ADC With 4 ppm INL for Bridge Transducers", IEEE Sensors Journal, vol. 25, no. 13, pp.24579–24587, Jul. 2025.
-Y. Lee†, S. Kim†, J. Kim, S. Kim, and J. Jun*, "A Low Power Digitizer Array with Adaptive Split Current Source for 3-D-Stacked 100 MP High Dynamic Range Imager", IEEE Sensors Journal, vol. 25, no. 12, pp.22609–22617, Jun. 2025.
-J. Kang, W. Han, S. Kim, and J. Jun*, "Comprehensive Analysis of Design and Performance Evaluation Methodologies for a High-Resolution Read-Out IC With Ultra-Low 1/f Corner for DC Measurement Applications", IEEE Transactions on Instrumentation and Measurement (TIM), vol. 74, pp.1–14, Mar. 2025.
+J. Kang, J. Rhee, S. Kim, and **J. Jun***, "A 21.6-bit Programmable-Gain Triple-Sampling Incremental ΔΣ ADC With 4 ppm INL for Bridge Transducers", IEEE Sensors Journal, vol. 25, no. 13, pp.24579–24587, Jul. 2025.
+Y. Lee†, **S. Kim**†, **J. Kim**, S. Kim, and **J. Jun***, "A Low Power Digitizer Array with Adaptive Split Current Source for 3-D-Stacked 100 MP High Dynamic Range Imager", IEEE Sensors Journal, vol. 25, no. 12, pp.22609–22617, Jun. 2025.
+J. Kang, **W. Han**, S. Kim, and **J. Jun***, "Comprehensive Analysis of Design and Performance Evaluation Methodologies for a High-Resolution Read-Out IC With Ultra-Low 1/f Corner for DC Measurement Applications", IEEE Transactions on Instrumentation and Measurement (TIM), vol. 74, pp.1–14, Mar. 2025.
 [Book(번역서)] "회로이론(Introductory Circuit Analysis)", 14판, 텍스트북스(Pearson), Feb. 2025. ISBN: 9789813351066
 ~2024
-S. Choi, J. Jo, and J. Jun*, "Analytical Design and Verification of a High-Precision Comparator", Transactions on Semiconductor Engineering (TSE), vol. 2, no. 4, pp.1–7, Dec. 2024.
-Y. Lee, S. Kim, and J. Jun*, "A 10-bit 13.3 μW Single-Slope ADC with Auto-Zero Power-Down Technique," Electronics Letters (EL), vol. 60, no. 5, pp. 1–4, May. 2024.
-Y. Ahn, J. Park, J. Kang, and J. Jun*, "A ±0.48°C (3σ) Inaccuracy BJT-Based Temperature Sensor with 241 μs Conversion Time for Display Driver IC in 40 nm CMOS," IEEE Access, vol. 11, pp. 132843–132851, Nov. 2023.
-J. Jun*, "A Comprehensive Methodology for Optimizing Read-Out Timing and Reference DAC Offset in High Frame Rate Image Sensing Systems," Sensors, vol. 23, no. 16:7048, pp. 1–13, Aug. 2023.
-J. Jun, S. Shin, M. Kim, Y. Ahn, and S. Kim, "A ±0.15% RH Inaccuracy Humidity Sensing System With ±0.44°C (3σ) Inaccuracy On-Chip Temperature Sensor," IEEE Sensors Journal, vol. 21, no. 2, pp. 2115–2123, Jan. 2021.
-J. Jun, S. Park, J. Kang, and S. Kim, "A 22-bit Read-Out IC With 7-ppm INL and Sub-100-μHz 1/f Corner for DC Measurement Systems," IEEE Journal of Solid-State Circuits (JSSC), vol. 54, no. 11, pp. 3086–3096, Nov. 2019.
-J. Cho, J. Rhee, S. Kim, Y. Yang, J. Jun, H. Lee, and S. Kim, "A 1.2-V 108.9-dB A-Weighted DR 101.4-dB SNDR Audio ΣΔ ADC Using a Multi-Rate Noise-Shaping Quantizer," IEEE Transactions on Circuits and Systems-II (TCAS-II), vol. 65, no. 10, pp.1315–1319, Oct. 2018.
-J. Jun, J. Rhee, S. Kim, and S. Kim, "An SC Interface with Programmable-Gain Embedded ΔΣ ADC for Monolithic 3-Axis 3-D Stacked Capacitive MEMS Accelerometer," IEEE Sensors Journal, vol. 17, no. 17, pp. 5558–5568, Sept. 2017.
+**S. Choi, J. Jo**, and **J. Jun***, "Analytical Design and Verification of a High-Precision Comparator", Transactions on Semiconductor Engineering (TSE), vol. 2, no. 4, pp.1–7, Dec. 2024.
+Y. Lee, S. Kim, and **J. Jun***, "A 10-bit 13.3 μW Single-Slope ADC with Auto-Zero Power-Down Technique," Electronics Letters (EL), vol. 60, no. 5, pp. 1–4, May. 2024.
+Y. Ahn, J. Park, J. Kang, and **J. Jun***, "A ±0.48°C (3σ) Inaccuracy BJT-Based Temperature Sensor with 241 μs Conversion Time for Display Driver IC in 40 nm CMOS," IEEE Access, vol. 11, pp. 132843–132851, Nov. 2023.
+**J. Jun***, "A Comprehensive Methodology for Optimizing Read-Out Timing and Reference DAC Offset in High Frame Rate Image Sensing Systems," Sensors, vol. 23, no. 16:7048, pp. 1–13, Aug. 2023.
+**J. Jun**, S. Shin, M. Kim, Y. Ahn, and S. Kim, "A ±0.15% RH Inaccuracy Humidity Sensing System With ±0.44°C (3σ) Inaccuracy On-Chip Temperature Sensor," IEEE Sensors Journal, vol. 21, no. 2, pp. 2115–2123, Jan. 2021.
+**J. Jun**, S. Park, J. Kang, and S. Kim, "A 22-bit Read-Out IC With 7-ppm INL and Sub-100-μHz 1/f Corner for DC Measurement Systems," IEEE Journal of Solid-State Circuits (JSSC), vol. 54, no. 11, pp. 3086–3096, Nov. 2019.
+J. Cho, J. Rhee, S. Kim, Y. Yang, **J. Jun**, H. Lee, and S. Kim, "A 1.2-V 108.9-dB A-Weighted DR 101.4-dB SNDR Audio ΣΔ ADC Using a Multi-Rate Noise-Shaping Quantizer," IEEE Transactions on Circuits and Systems-II (TCAS-II), vol. 65, no. 10, pp.1315–1319, Oct. 2018.
+**J. Jun**, J. Rhee, S. Kim, and S. Kim, "An SC Interface with Programmable-Gain Embedded ΔΣ ADC for Monolithic 3-Axis 3-D Stacked Capacitive MEMS Accelerometer," IEEE Sensors Journal, vol. 17, no. 17, pp. 5558–5568, Sept. 2017.
