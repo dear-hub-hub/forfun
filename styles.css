@@ -1451,3 +1451,12 @@ body > footer { padding-top: 17px; padding-bottom: 17px; }
   .contact-inline-map { height: 210px; margin-top: 20px; }
   .contact-details { bottom: 18px; }
 }
+
+/* Match the principal investigator name to the PEOPLE heading. */
+.people .pi-details h3 { font-size: 42px; }
+@media (max-width: 1000px) {
+  .people .pi-details h3 { font-size: 31px; }
+}
+@media (max-width: 700px) {
+  .people .pi-details h3 { font-size: 23px; }
+}
