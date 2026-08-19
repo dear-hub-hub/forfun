@@ -5,3 +5,7 @@
 
 /* Stronger section hierarchy. */
 .profile-links{background:linear-gradient(135deg,#06192c,#09243d);border-top:1px solid rgba(95,180,247,.25);border-bottom:1px solid rgba(95,180,247,.25)}.profile-links a{border-color:#59aff0}.profile-section{padding-top:98px;padding-bottom:98px}.profile-label{font-size:32px;line-height:1.1;letter-spacing:-.06em}.timeline time{font-size:17px}.timeline h2{font-size:18px;line-height:1.5}.timeline h3{font-size:17px}.timeline p{font-size:17px;line-height:1.55}.honor-list span{font-size:17px}.honor-list p{font-size:17px;line-height:1.58}@media(max-width:800px){.profile-label{font-size:27px}.timeline time{font-size:16px}.timeline h2,.timeline h3,.timeline p,.honor-list p,.honor-list span{font-size:16px}}
+
+/* Match the current main-page header link scale. */
+.profile-nav .back-link{font-size:21.6px}
+@media(max-width:700px){.profile-nav .back-link{font-size:18px}}

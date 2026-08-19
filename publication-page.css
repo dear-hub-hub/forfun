@@ -23,3 +23,7 @@ body{margin:0;background:var(--cream);color:var(--ink)}
 .note-status{text-align:left}
 footer{padding:25px 5vw;border-top:1px solid var(--line)}
 @media(max-width:800px){.pub-page{grid-template-columns:1fr;gap:35px;padding:58px 7vw 75px}.pub-intro{position:static}.pub-list article{grid-template-columns:48px 1fr}.note-authorship{text-align:left}}
+
+/* Match the current main-page header. */
+.site-header{height:99px}.site-header .brand{gap:13px;font-size:41.4px;line-height:1}.site-header .brand img{width:58px;height:61px;object-fit:contain}.site-header .back{font-size:21.6px}
+@media(max-width:700px){.site-header{height:79px}.site-header .brand{gap:10px;font-size:32.4px}.site-header .brand img{width:41px;height:41px}.site-header .back{font-size:18px}}

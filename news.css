@@ -7,3 +7,7 @@
 /* Month numbering removed from the archive rows. */
 .items article { grid-template-columns: 1fr; gap: 0; padding-left: 26px; }
 @media (max-width: 500px) { .items article { grid-template-columns: 1fr; padding-left: 18px; } }
+
+/* Match the current main-page header. */
+.site-header{height:99px}.site-header .brand{gap:13px;font-size:41.4px;line-height:1}.site-header .brand img{width:58px;height:61px}.site-header .back-link{font-size:21.6px}
+@media(max-width:700px){.site-header{height:79px}.site-header .brand{gap:10px;font-size:32.4px}.site-header .brand img{width:41px;height:41px}.site-header .back-link{font-size:18px}}

@@ -4,3 +4,7 @@
 .project-intro > p.eyebrow:last-of-type { max-width: 360px; color: var(--ink); font-size: clamp(38px,4.2vw,66px); font-weight: 800; line-height: .93; letter-spacing: -.07em; }
 .project-intro nav { margin-top: 46px; }
 .project-group header > div { align-self: center; }
+
+/* Match the current main-page header. */
+.site-header{height:99px}.site-header .brand{gap:13px;font-size:41.4px;line-height:1}.site-header .brand img{width:58px;height:61px}.site-header .back-link{font-size:21.6px}
+@media(max-width:700px){.site-header{height:79px}.site-header .brand{gap:10px;font-size:32.4px}.site-header .brand img{width:41px;height:41px}.site-header .back-link{font-size:18px}}
