@@ -1460,3 +1460,19 @@ body > footer { padding-top: 17px; padding-bottom: 17px; }
 @media (max-width: 700px) {
   .people .pi-details h3 { font-size: 23px; }
 }
+
+/* Scale the main header lockup and navigation to 180%. */
+.site-header { height: 137px; }
+.site-header .brand { gap: 13px; font-size: 41.4px; }
+.site-header .brand-mark { width: 58px; height: 61px; }
+.site-header nav { gap: 45px; }
+.site-header nav a { font-size: 21.6px; }
+
+@media (max-width: 700px) {
+  .site-header { height: 117px; }
+  .site-header .brand { gap: 10px; font-size: 32.4px; }
+  .site-header .brand-mark { width: 41px; height: 41px; }
+  .site-header .menu-button { font-size: 19.8px; }
+  .site-header nav.open { top: 116px; }
+  .site-header nav a { font-size: 18px; }
+}
