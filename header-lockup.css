@@ -1,0 +1,42 @@
+/* One shared AMPLIA header lockup across the home and detail pages. */
+.site-header .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  color: #061321;
+  font-family: Pretendard, Arial, sans-serif;
+  font-size: 41.4px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+.site-header .brand img,
+.site-header .brand .brand-mark {
+  display: block;
+  flex: 0 0 58px;
+  width: 58px;
+  height: 61px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.site-header .brand > span {
+  display: block;
+  line-height: 1;
+}
+
+@media (max-width: 700px) {
+  .site-header .brand {
+    gap: 10px;
+    font-size: 32.4px;
+  }
+
+  .site-header .brand img,
+  .site-header .brand .brand-mark {
+    flex-basis: 41px;
+    width: 41px;
+    height: 41px;
+  }
+}
